@@ -1,0 +1,72 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyg5sdv8o7fa4"]
+
+[ext_resource type="Script" path="res://scenes/user_interface/ui_container/UiContainer.gd" id="1_8sd7r"]
+[ext_resource type="Script" path="res://scenes/user_interface/button_container/ButtonContainer.gd" id="2_jwq1b"]
+
+[node name="UiContainer" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+script = ExtResource("1_8sd7r")
+
+[node name="LogMargin" type="MarginContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 10
+
+[node name="LogScroll" type="ScrollContainer" parent="LogMargin"]
+clip_contents = false
+layout_mode = 2
+size_flags_vertical = 3
+follow_focus = true
+vertical_scroll_mode = 0
+
+[node name="LogText" type="RichTextLabel" parent="LogMargin/LogScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Du schlägst die Augen auf. 
+
+Deine Nachbarn, deren Küche direkt an dein Schlafzimmer grenzt, machen sich Frühstück.
+
+Die Wände deiner Sozialwohnung sind dünn wie Papier und so hörst du jeden Schritt, jede Schranktür 
+und jedes dumpdröhnende einschlagen der tumben Musik.
+
+Du bist seit 2 Tagen wach und warst kurz davor einzuschlafen. 
+
+Das geköpfte Baby, das an der Decke krabbelt, rät dir einen Hammer zu nehmen und Ihnen die Schädel einzuschlagen."
+scroll_following = true
+
+[node name="ButtonContainer" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(900, 100)
+layout_mode = 2
+size_flags_vertical = 8
+alignment = 1
+script = ExtResource("2_jwq1b")
+
+[node name="Option 1" type="Button" parent="ButtonContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Option 1"
+
+[node name="Option 2" type="Button" parent="ButtonContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Option 2"
+
+[node name="Option 3" type="Button" parent="ButtonContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Option 2"
+
+[connection signal="pressed" from="ButtonContainer/Option 1" to="." method="_on_option_1_pressed"]
+[connection signal="pressed" from="ButtonContainer/Option 2" to="." method="_on_option_2_pressed"]
+[connection signal="pressed" from="ButtonContainer/Option 3" to="." method="_on_option_3_pressed"]

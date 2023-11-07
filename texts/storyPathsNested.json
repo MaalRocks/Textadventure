@@ -1,0 +1,189 @@
+{
+	"0": {
+		"button_title": "Anfang",
+		"text": [
+			"Du schlägst die Augen auf.",
+			"\n",
+			"\n",
+			"Deine Nachbarn, deren Küche direkt an dein Schlafzimmer grenzt, machen sich Frühstück.",
+			"\n",
+			"\n",
+			"Die Wände deiner Sozialwohnung sind dünn wie Papier und so hörst du jeden Schritt, \n", 
+			"jede Schranktür und jedes dumpdröhnende einschlagen der tumben Musik.",
+			"\n",
+			"\n",
+			"Du bist seit 2 Tagen wach und warst kurz davor einzuschlafen.",
+			"\n",
+			"\n",
+			"Das geköpfte Baby das an der Decke krabbelt, rät dir einen Hammer zu nehmen und Ihnen die Schädel einzuschlagen.",
+		],
+	},
+
+	"1": {
+		"button_title": "Hammer finden",
+		"text": [
+			"Du richtest dich auf.",
+			"\n",
+			"\n",
+			"Für einen kurzen Moment flimmern deine Augen und du siehst wie Insekten aus den schwarzen Punkten quillen.",
+			"\n",
+			"\n",
+			"[i][color=DC143C]Der Hammer liegt im Flur neben der Tür[/color][/i]",
+			"\n",
+			"\n",
+			"Du kennst die Stimme und vertraust ihr nicht. Aber dieses mal hat sie keinen Grund zu lügen.",
+			"\n",
+			"\n",
+			"Dein Körper bewegt sich. Es fühlt sich an als würdest du durch warmen Teer gezogen und deine Gedanken verlieren sich bis du den Hammer in der Hand hälst.",
+		],
+
+				"1": {
+					"button_title": "Zur Tür gehen",
+					"text": [
+						"Du spürst pochen in deiner Schläfe. Deine Hand festig ihren Griff und du bewegst dich auf die Tür zu",
+					],
+
+							"1": {
+								"button_title": "Tür öffnen",
+								"text": [
+									"Die Tür geht nicht auf",
+								],
+							},
+
+							"2": {
+								"button_title": "Von Tür abwenden",
+								"text": [
+									"Sie lacht.",
+								],
+							},
+
+							"3": {
+								"button_title": "Schlage deinen Kopf ein",
+								"text": [
+									"[i][color=A9A9A9]Sicher das du das nochmal tun möchtest?[/color][/i]",
+								],
+							},
+				},
+
+				"2": {
+					"button_title": "Hammer weglegen",
+					"text": [
+						"Eine schlechte Idee. Direkte Gewalt bringt dich nur in Schwierigkeiten.",
+					],
+				
+
+							"1": {
+								"button_title": "Schau zu deiner Hand",
+								"text": [
+									"Du hälst den Hammer immernoch.",
+								],
+							},
+
+							"2": {
+								"button_title": "Male ansprechen",
+								"text": [
+									"Du beschwörst zögerlich das Blut.",
+								],
+							},
+
+							"3": {
+								"button_title": "In die Küche gehen",
+								"text": [
+									"Du bewegst dich in Richtung Küche.",
+									"\n",
+									"\n",
+									"Durch das Glaspanel der Tür kannst du sehen wie sich Gestalten reckeln.",
+									"\n",
+									"Als du hindurch gehst sind diese verschwunden und du siehst nur Müll.",
+								],
+							},
+				},
+
+				"3": {
+					"button_title": "Nachdenken",
+					"text": [
+						"Du schaust nachdenklich die Wand an welche sich wärendessen schreiend winded als plötzlich...",
+					],
+
+					"1": {
+						"button_title": "Ja?...",
+						"text": [
+							"Ach nichts.",
+						],
+					},
+
+					"2": {
+						"button_title": "Wegrennen",
+						"text": [
+							"Was für eine Überraschung.",
+						],
+					},
+
+					"3": {
+						"button_title": "Interessiert mich nicht",
+						"text": [
+							"Oh, cool!",
+						],
+					},
+				},
+	},
+	
+	"2": {
+		"button_title": "Liegen und siechen",
+		"text": [
+			"Du spürst pochen in deiner Schläfe. Deine Hand festig ihren Griff und du bewegst dich auf die Tür zu",
+		],
+
+				"1": {
+					"button_title": "Weiter liegen",
+					"text": [
+						"[i]Gute Arbeit. Mach weiter So![/i]",
+					],
+				},
+
+				"2": {
+					"button_title": "Weiter siechen",
+					"text": [
+						"[i]Spürst du das Aneurisma wachsen?[/i]",
+					],
+				},
+
+				"3": {
+					"button_title": "...",
+					"text": [
+						"...",
+					],
+				},
+	},
+	
+	"3": {
+		"button_title": "Nachdenken",
+		"text": [
+			"Du schaust zu wie sich die Wand winded als plötzlich.",
+		],
+
+				"1": {
+					"button_title": "Weiter liegen",
+					"text": [
+						"[i]Gute Arbeit. Mach weiter So![/i]",
+					],
+				},
+
+				"2": {
+					"button_title": "Weiter siechen",
+					"text": [
+						"[i]Spürst du das Aneurisma wachsen?[/i]",
+					],
+				},
+
+				"3": {
+					"button_title": "...",
+					"text": [
+						"...",
+					],
+				},
+	},
+	
+}
+
+

@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyg5sdv8o7fa4"]
+
+[ext_resource type="Script" path="res://scenes/user_interface/ui_container/UiContainer.gd" id="1_8sd7r"]
+[ext_resource type="Script" path="res://scenes/user_interface/button_container/ButtonContainer.gd" id="2_jwq1b"]
+
+[node name="UiContainer" type="VBoxContainer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 647.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+script = ExtResource("1_8sd7r")
+
+[node name="LogScrollContainer" type="ScrollContainer" parent="."]
+clip_contents = false
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_vertical = 3
+follow_focus = true
+vertical_scroll_mode = 0
+
+[node name="EventLog" type="RichTextLabel" parent="LogScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Du schlägst die Augen auf. 
+
+Deine Nachbarn, deren Küche direkt an dein Schlafzimmer grenzt, machen sich Frühstück.
+
+Die Wände deiner Sozialwohnung sind dünn wie Papier und so höhrst du jeden Schritt, jede Schranktür 
+und jedes dumpdröhnende einschlagen der stumpfen Musik.
+
+Du bist seit 2 Tagen wach und warst kurz davor einzuschlafen. 
+
+Das geköpfte Baby, das an der Decke krabbelt, rät dir einen Hammer zu nehmen und Ihnen die Schädel einzuschlagen."
+
+[node name="ButtonContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 8
+alignment = 2
+script = ExtResource("2_jwq1b")
+
+[connection signal="choices_finished_loading" from="ButtonContainer" to="." method="_on_button_container_choices_finished_loading"]
